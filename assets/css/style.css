@@ -9,6 +9,8 @@
     --project-text: #4b5563; /* Light mode project text */
     --footer-bg: #f4f4f4;
     --footer-text: #333;
+    --skill-card-bg: #ffffff; /* Light mode skill card background */
+    --skill-card-text: #000000; /* Light mode skill card text */
 }
 
 /* Dark mode overrides */
@@ -22,6 +24,8 @@
     --project-text: #d1d5db; /* Dark mode project text */
     --footer-bg: #1e1e1e;
     --footer-text: #ffffff;
+    --skill-card-bg: #333333; /* Dark mode skill card background */
+    --skill-card-text: #ffffff; /* Dark mode skill card text */
 }
 
 /* Global styles */
@@ -50,47 +54,40 @@ a {
     color: var(--link-color);
 }
 
-/* Update Project Item Styles */
-ul li {
-    background-color: var(--project-bg); /* Use custom variable */
-    color: var(--project-text); /* Text color for project description */
-    padding: 1.5rem;
+/* Skills Section Styling */
+section {
+    background-color: var(--bg-color);
+}
+
+/* Skill cards */
+section .skill-card {
+    background-color: var(--skill-card-bg);
+    color: var(--skill-card-text); /* This ensures the text color follows the theme */
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
-ul li:hover {
-    background-color: var(--link-color); /* Hover background */
+section .skill-card:hover {
+    background-color: var(--link-color);
     color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-ul li a {
-    color: inherit; /* Ensure the link color inside the list item inherits the text color */
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+section .skill-card h4 {
     font-weight: bold;
+    color: inherit; /* This ensures the h4 inherits the color from skill-card */
 }
 
-/* Hover state for links in project section */
-ul li a:hover {
-    color: #fff;
+/* Skill bar */
+section .skill-card .skill-bar {
+    background-color: var(--link-color);
+    height: 0.5rem;
+    border-radius: 0.25rem;
 }
 
-ul li p {
-    color: var(--project-text); /* Ensure text color for descriptions */
-}
 
-
-/* Section background */
-section {
-    background-color: var(--bg-color);
-}
-
-/* Ensure theme switch button matches theme colors */
 .theme-switcher {
     background-color: var(--bg-color);
     color: var(--text-color);

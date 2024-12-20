@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <!-- Header -->
     <header class="text-gray-900 shadow-md py-4">
         <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
@@ -25,6 +24,7 @@
                         <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
                         <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
                         <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+                        <li><a href="resume.pdf" class="hover:text-blue-500" target="_blank">Resume</a></li>
                     </ul>
                 </nav>
                 <button class="theme-switcher p-2 bg-blue-500 text-white rounded-full" onclick="toggleTheme()">
@@ -34,33 +34,60 @@
         </div>
     </header>
 
-
     <!-- Main Content -->
     <main>
+        <!-- About Me Section -->
         <section class="text-center py-12">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-semibold">Hello!</h2>
                 <p class="text-lg mt-4">I'm a programmer and a Master's student in Computer Science. I specialize in
-                    building scalable applications and solving challenging problems.</p>
+                    building scalable applications and solving challenging problems. Currently, I am working on
+                    improving my skills in web development, machine learning, and software architecture.</p>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Skills Section -->
+        <section class="py-12 dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto text-center">
+                <h4 class="text-2xl font-semibold dark:text-white">Skills</h4>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="skill-card">
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Python</h4>
+                        <div class="mt-2 skill-bar" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="font-semibold text-gray-900 dark:text-white">JavaScript</h4>
+                        <div class="mt-2 skill-bar" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="font-semibold text-gray-900 dark:text-white">React</h4>
+                        <div class="mt-2 skill-bar" style="width: 70%"></div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Recent Projects Section -->
         <section class="py-12">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-2xl font-semibold">My Projects</h2>
-                <ul class="mt-4 space-y-4">
-                    <li>
-                        <a href="https://github.com/your-repo"
-                            class="text-xl text-blue-500 hover:underline flex items-center justify-center">
-                            <i class="fab fa-github mr-2"></i> Project 1
+                <h3 class="text-2xl font-semibold">Recent Projects</h3>
+                <ul class="mt-6 space-y-4">
+                    <li class=" p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                        <a href="https://github.com/your-repo/project-1" class="text-xl text-blue-500 hover:underline">
+                            Project 1: Web App
                         </a>
+                        <p class="mt-2 text-gray-600">A web application built with React and Node.js.</p>
                     </li>
-                    <li>
-                        <a href="https://github.com/your-repo"
-                            class="text-xl text-blue-500 hover:underline flex items-center justify-center">
-                            <i class="fab fa-github mr-2"></i> Project 2
+                    <li class=" p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                        <a href="https://github.com/your-repo/project-2" class="text-xl text-blue-500 hover:underline">
+                            Project 2: Machine Learning
                         </a>
+                        <p class="mt-2 text-gray-600">A machine learning project using Python and TensorFlow.</p>
                     </li>
                 </ul>
             </div>
@@ -85,5 +112,6 @@
 
     <script src="./assets/js/script.js"></script>
 </body>
+
 
 </html>
