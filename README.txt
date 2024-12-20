@@ -1,32 +1,35 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Muhammad Hassan Raza - Personal Portfolio
 
+This is a personal portfolio website showcasing my work and skills as a programmer and Master's student in Computer Science. The website is built using a **static site** structure with **Tailwind CSS** for styling and **custom dark/light mode** support.
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+## Features
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+- **Dark/Light Mode**: Switch between dark and light themes using a toggle button.
+- **Responsive Design**: Optimized for both desktop and mobile views.
+- **Projects Section**: Links to my GitHub repositories showcasing my programming projects.
+- **Contact Section**: Provides links to my social media profiles.
 
-(* = not included)
+## Technologies Used
 
-AJ
-aj@lkn.io | @ajlkn
+- **HTML**: For structuring the web pages.
+- **Tailwind CSS**: For utility-first styling.
+- **JavaScript**: For dark/light mode theme switching functionality.
 
+## Setup
 
-Credits:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/M-Hassan-Raza/M-Hassan-Raza.github.io
+   ```
 
-	Demo Images:
-		Unsplash (unsplash.com)
+2. Open the `index.html` file in your browser.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+## Customizing
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+To update the content or design:
+- Modify the text inside `index.html`, `projects.html`, or `contact.html`.
+- Update the styles in `style.css`.
+
+## License
+
+I don't care. Do whatever you want with this code. This is open-source. 
