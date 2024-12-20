@@ -1,0 +1,134 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a73e8;
+    --header-bg: #f4f4f4;
+    --header-text: #333;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #bb86fc;
+    --header-bg: #1e1e1e;
+    --header-text: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.main-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 2px solid var(--link-color);
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    color: var(--link-color);
+}
+
+.theme-switcher {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 2rem 0;
+}
+
+.projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 0.5rem;
+}
+
+.project-list li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1.1rem;
+}
+
+.project-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem 0;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer .social-links li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1.5rem;
+}

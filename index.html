@@ -1,304 +1,72 @@
 <!DOCTYPE html>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Massively by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-      <!-- Intro -->
-      <div id="intro">
-        <h1>My Portfolio</h1>
-        <p>
-          This is a showcase of my Projects and my abilities regarding Programming
-        </p>
-        <ul class="actions">
-          <li>
-            <a
-              href="#header"
-              class="button icon solid solo fa-arrow-down scrolly"
-              >Continue</a
-            >
-          </li>
-        </ul>
-      </div>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- For custom styles like dark mode -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-white text-black">
 
-      <!-- Header -->
-      <header id="header">
-        <a href="index.html" class="logo">Massively</a>
-      </header>
+    <!-- Header -->
+    <header class="bg-gray-100 text-gray-900 shadow-md py-4">
+        <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
+            <h1 class="text-2xl font-bold">[Your Name]</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-switcher p-2 bg-blue-500 text-white rounded-full" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-sun text-lg"></i>
+            </button>
+        </div>
+    </header>
 
-      <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="index.html">This is Massively</a></li>
-          </li>
-        </ul>
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/hassanraza22/" class="icon brands fa-linkedin"
-              ><span class="label">Linkedin</span></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/M-Hassan-Raza" class="icon brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main">
-        <!-- Featured Post -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a href="#"
-                >And this is a<br />
-                massive headline</a
-              >
-            </h2>
-            <p>
-              Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-              facilisis ante sed etiam magna interdum congue. Lorem ipsum
-              dolor<br />
-              amet nullam sed etiam veroeros.
-            </p>
-          </header>
-          <a href="#" class="image main"
-            ><img src="images/pic01.jpg" alt=""
-          /></a>
-          <ul class="actions special">
-            <li><a href="#" class="button large">Full Story</a></li>
-          </ul>
-        </article>
-
-        <!-- Posts -->
-        <section class="posts">
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Sed magna<br />
-                  ipsum faucibus</a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/pic02.jpg" alt=""
-            /></a>
-            <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis magna etiam.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">Full Story</a></li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Primis eget<br />
-                  imperdiet lorem</a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/pic03.jpg" alt=""
-            /></a>
-            <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis magna etiam.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">Full Story</a></li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Ante mattis<br />
-                  interdum dolor</a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/pic04.jpg" alt=""
-            /></a>
-            <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis magna etiam.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">Full Story</a></li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Tempus sed<br />
-                  nulla imperdiet</a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/pic05.jpg" alt=""
-            /></a>
-            <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis magna etiam.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">Full Story</a></li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Odio magna<br />
-                  sed consectetur</a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/pic06.jpg" alt=""
-            /></a>
-            <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis magna etiam.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">Full Story</a></li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Augue lorem<br />
-                  primis vestibulum</a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/pic07.jpg" alt=""
-            /></a>
-            <p>
-              Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-              mattis sagittis magna etiam.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">Full Story</a></li>
-            </ul>
-          </article>
+    <!-- Main Content -->
+    <main>
+        <section class="text-center py-12">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-semibold">Hello!</h2>
+                <p class="text-lg mt-4">I'm a programmer and a Master's student in Computer Science. I specialize in building scalable applications and solving challenging problems.</p>
+            </div>
         </section>
 
-        <!-- Footer -->
-        <footer>
-          <div class="pagination">
-            <!--<a href="#" class="previous">Prev</a>-->
-            <a href="#" class="page active">1</a>
-            <a href="#" class="page">2</a>
-            <a href="#" class="page">3</a>
-            <span class="extra">&hellip;</span>
-            <a href="#" class="page">8</a>
-            <a href="#" class="page">9</a>
-            <a href="#" class="page">10</a>
-            <a href="#" class="next">Next</a>
-          </div>
-        </footer>
-      </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <section>
-          
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl font-semibold">My Projects</h2>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="https://github.com/your-repo" class="text-xl text-blue-500 hover:underline flex items-center justify-center">
+                            <i class="fab fa-github mr-2"></i> Project 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/your-repo" class="text-xl text-blue-500 hover:underline flex items-center justify-center">
+                            <i class="fab fa-github mr-2"></i> Project 2
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="split contact">
-          <section class="alt">
-            <h3>Address</h3>
-            <p>
-              1234 Somewhere Road #87257<br />
-              Nashville, TN 00000-0000
-            </p>
-          </section>
-          <section>
-            <h3>Phone</h3>
-            <p><a href="#">(000) 000-0000</a></p>
-          </section>
-          <section>
-            <h3>Email</h3>
-            <p><a href="#">info@untitled.tld</a></p>
-          </section>
-          <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-              <li>
-                <a href="#" class="icon brands alt fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands alt fa-facebook-f"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands alt fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands alt fa-github"
-                  ><span class="label">GitHub</span></a
-                >
-              </li>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center py-6">
+        <div class="max-w-screen-xl mx-auto">
+            <p class="text-sm">&copy; 2024 [Your Name]. All Rights Reserved.</p>
+            <ul class="flex justify-center mt-4 space-x-6">
+                <li><a href="https://github.com/your-username" class="text-gray-600 hover:text-blue-500"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/your-username" class="text-gray-600 hover:text-blue-500"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:your-email@example.com" class="text-gray-600 hover:text-blue-500"><i class="fas fa-envelope"></i></a></li>
             </ul>
-          </section>
-        </section>
-      </footer>
+        </div>
+    </footer>
 
-      <!-- Copyright -->
-      <div id="copyright">
-        <ul>
-          <li>&copy; Untitled</li>
-          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
