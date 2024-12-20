@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Muhammad Hassan Raza</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- For custom styles like dark/light mode -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="text-gray-900 shadow-md py-4">
+        <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
+            <!-- Left side: Name -->
+            <h1 class="text-2xl font-bold">Muhammad Hassan Raza</h1>
+
+            <!-- Right side: Navigation and Theme Switcher -->
+            <div class="flex items-center space-x-6">
+                <nav>
+                    <ul class="flex space-x-6 text-lg">
+                        <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="theme-switcher p-2 bg-blue-500 text-white rounded-full" onclick="toggleTheme()">
+                    <i id="theme-icon" class="fas fa-sun text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">My Projects</h2>
+            <ul class="space-y-4">
+                <!-- Project 1 -->
+                <li class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <a href="https://github.com/your-repo/project-1" class="text-xl text-blue-500 hover:underline flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> Project 1: Web App
+                    </a>
+                    <p class="mt-2 text-gray-600">A web application built with React and Node.js.</p>
+                </li>
+
+                <!-- Project 2 -->
+                <li class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <a href="https://github.com/your-repo/project-2" class="text-xl text-blue-500 hover:underline flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> Project 2: Machine Learning
+                    </a>
+                    <p class="mt-2 text-gray-600">A machine learning project using Python and TensorFlow.</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6">
+        <div class="max-w-screen-xl mx-auto">
+            <p class="text-sm">&copy; 2024 Muhammad Hassan Raza. All Rights Reserved.</p>
+            <ul class="flex justify-center mt-4 space-x-6">
+                <li><a href="https://github.com/your-username" class="text-gray-600 hover:text-blue-500"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/your-username" class="text-gray-600 hover:text-blue-500"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:your-email@example.com" class="text-gray-600 hover:text-blue-500"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
